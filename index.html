@@ -1,16 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sandie D. Pedersen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV/Resume</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Sandie D. Pedersen</h1>
-    <p>Welcome to my portfolio website.</p>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="active">About Me</a></li>
+                <li><a href="cv.html">CV / Resume</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="resume">
 
-    <h2>Menu</h2>
-    <ul>
-        <li><a href="cv.html">CV / Resume</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-    </ul>
+        <!-- left-side -->
+
+        <div class="left-side">
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="/img/profile.png" alt="Profile Photo">
+                </div>
+                <h1 class="name">Sandie D. Pedersen</h1>
+                <p class="title">Business & Operations Analyst</p>
+            </div>
+            <div class="contact padding-top-bg">
+                <h1 class="heading-primary-white">Details</h1>
+                <div class="info-box padding-top-sm">
+                    <div class="info-title">Location</div>
+                    <div class="info">
+                        <a>Køge, Danmark</a>
+                    </div>
+                </div>
+                <div class="info-box padding-top-sm">
+                    <div class="info-title">LinkedIn</div>
+                    <div class="info">
+                        <a href="https://www.linkedin.com/in/sdpedersen/" target="_blank">linkedin.com/in/sdpedersen/</a>
+                    </div>
+                </div>
+                <div class="info-box padding-top-sm">
+                    <div class="info-title">GitHub</div>
+                    <div class="info"><a href="https://github.com/sdpedersen" target="_blank">github.com/sdpedersen</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right-side -->
+
+        <div class="right-side">
+            <div class="about-me padding-top-bg">
+                <h1 class="heading-primary-black">About Me</h1>
+                <p class="description">
+                    Data-driven analyst and Operations Controller with 10+ years of experience in analysis, data validation, and operational controlling in an organization with 130 units and multiple data sources. Works across systems to identify patterns and deviations in operational data, validate the data foundation, and create transparency in operational processes. Has a solid understanding of the interaction between operations, processes, and data through experience from both operational roles in the field and analytical work at the headquarters. Translates analyses into documented insights that can be used to follow up on irregularities and improve daily operations.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav-links');
+
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
