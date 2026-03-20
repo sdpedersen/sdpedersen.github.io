@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV/Resume</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/index.html">About Me</a></li>
+                <li><a href="/cv.html">CV / Resume</a></li>
+                <li><a href="/portfolio.html">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="resume">
+
+        <!-- left-side -->
+
+        <div class="left-side">
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="/img/profile.png" alt="Profile Photo">
+                </div>
+                <h1 class="name">Sandie D. Pedersen</h1>
+                <p class="title">Business & Operations Analyst</p>
+            </div>
+            <div class="contact padding-top-bg">
+                <h1 class="heading-primary-white">Details</h1>
+                <div class="info-box padding-top-sm">
+                    <div class="info-title">Location</div>
+                    <div class="info">
+                        <a>Køge, Danmark</a>
+                    </div>
+                </div>
+                <div class="info-box padding-top-sm">
+                    <div class="info-title">LinkedIn</div>
+                    <div class="info">
+                        <a href="https://www.linkedin.com/in/sdpedersen/" target="_blank">linkedin.com/in/sdpedersen/</a>
+                    </div>
+                </div>
+                <div class="info-box padding-top-sm">
+                    <div class="info-title">GitHub</div>
+                    <div class="info"><a href="https://github.com/sdpedersen" target="_blank">github.com/sdpedersen</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right-side -->
+
+        <div class="right-side">
+            <div class="project padding-top-bg">
+                <h1 class="heading-primary-black">Pharmacy Sales & Profitability Analysis</h1>
+                <h2 class="heading-secondary-black">Overview</h2>
+                <ul class="description">
+                    <li>This project analyzes sales and profitability data to identify key revenue drivers and inefficiencies.</li>
+                    <li>The goal was to uncover bla bla bla</li>
+                </ul>
+                <h2 class="heading-secondary-black">Key Insights</h2>
+                <ul class="description">
+                    <li>Top product categories drove 60% of revenue.</li>
+                    <li>Identified underperforming stores.</li>
+                    <li>Seasonal trends significantly impacted sales.</li>
+                </ul>
+                <h2 class="heading-secondary-black">Tools Used</h2>
+                <ul class="description">
+                    <li>Power Query for data qualification</li>
+                    <li>Power BI for data visualization</li>
+                </ul>
+                <h2 class="heading-secondary-black">View project on GitHub</h2>
+                <p class="project"><a href="https://github.com/sdpedersen/pharmacy-sales-and-profitability-analysis" target="_blank">Pharmacy Sales & Profitability Analysis &#10142;</a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav-links');
+
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
