@@ -1,12 +1,193 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>CV</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV/Resume</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>My CV</h1>
-    <p>Add your experience, education, and skills here.</p>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="cv.html" class="active">CV / Resume</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="resume">
 
-    <a href="index.html">Back to Home</a>
+        <!-- left-side -->
+
+        <div class="left-side">
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="/img/profile.png" alt="Profile Photo">
+                </div>
+                <h1 class="name">Sandie D. Pedersen</h1>
+                <p class="title">Business & Operations Analyst</p>
+            </div>
+            <div class="contact padding-top-bg">
+                <h1 class="heading-primary-white">Details</h1>
+                <div class="info-box padding-top-sm">
+                    <div class="info-title">Location</div>
+                    <div class="info">
+                        <a>Køge, Danmark</a>
+                    </div>
+                </div>
+                <div class="info-box padding-top-sm">
+                    <div class="info-title">LinkedIn</div>
+                    <div class="info">
+                        <a href="https://www.linkedin.com/in/sdpedersen/" target="_blank">linkedin.com/in/sdpedersen/</a>
+                    </div>
+                </div>
+                <div class="info-box padding-top-sm">
+                    <div class="info-title">GitHub</div>
+                    <div class="info"><a href="https://github.com/sdpedersen" target="_blank">github.com/sdpedersen</a></div>
+                </div>
+            </div>
+            <div class="education padding-top-bg">
+                <h1 class="heading-primary-white">Education</h1>
+                <div class="info-box padding-top-sm">
+                    <div class="info">1998</div>
+                    <div class="info-title">Computer Science</div>
+                    <div class="info">Roskilde Business Academy, Denmark</div>
+                </div>
+            </div>
+			<div class="education padding-top-bg">
+                <h1 class="heading-primary-white">Courses</h1>
+                <div class="info-box padding-top-sm">
+                    <div class="info">2026</div>
+                    <div class="info-title">Data Analyst in Power BI</div>
+                    <div class="info">Datacamp</div>
+                </div>
+				<div class="info-box padding-top-sm">
+                    <div class="info">2025</div>
+                    <div class="info-title">Power Query & Power Pivot</div>
+                    <div class="info">Datacamp</div>
+                </div>
+				<div class="info-box padding-top-sm">
+                    <div class="info">2024</div>
+                    <div class="info-title">Excel Pivot Tables</div>
+                    <div class="info">Teknologisk Institut</div>
+                </div>
+				<div class="info-box padding-top-sm">
+                    <div class="info">2023</div>
+                    <div class="info-title">Excel Advanced</div>
+                    <div class="info">Teknologisk Institut</div>
+                </div>
+            </div>
+            <div class="expertise padding-top-bg">
+                <h1 class="heading-primary-white">Skills</h1>
+                <div class="info-box padding-top-sm">
+                    <div class="info-title">Data & Analysis</div>
+                    <div class="info">Excel, Power BI (data modeling and visualization in own analysis projects), data consolidation and validation, deviation and control analysis, reporting.</div>
+                </div>
+                <div class="info-box padding-top-sm">
+                    <div class="info-title">Business & Processes</div>
+                    <div class="info">KPI follow-up, process improvement, internal controls, stakeholder collaboration.</div>
+                </div>
+                <div class="info-box padding-top-sm">
+                    <div class="info-title">Systems & Requirements</div>
+                    <div class="info">Requirements specification, userguides, documentation, user acceptance testing (manual).</div>
+                </div>
+            </div>
+            <div class="language padding-top-bg">
+                <h1 class="heading-primary-white">Languages</h1>
+                <div class="info-box padding-top-sm">
+                    <div class="lang-box">
+                        <p class="info-title">Danish</p>
+                        <span class="percent"><div style="width: 100%;"></div></span>
+                    </div>
+                    <div class="lang-box">
+                        <p class="info-title">English</p>
+                        <span class="percent"><div style="width: 95%;"></div></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right-side -->
+
+        <div class="right-side">
+            <div class="about-me padding-top-bg">
+                <h1 class="heading-primary-black">About Me</h1>
+                <p class="description">
+                    Data-driven analyst and Operations Controller with 10+ years of experience in analysis, data validation, and operational controlling in an organization with 130 units and multiple data sources. Works across systems to identify patterns and deviations in operational data, validate the data foundation, and create transparency in operational processes. Has a solid understanding of the interaction between operations, processes, and data through experience from both operational roles in the field and analytical work at the headquarters. Translates analyses into documented insights that can be used to follow up on irregularities and improve daily operations.
+                </p>
+            </div>
+            <div class="experience padding-top-bg">
+                <h1 class="heading-primary-black">Experience</h1>
+                <div class="xp-box padding-top-sm">
+                    <p class="xp-year">May 2023 - Present</p>
+                    <p class="xp-company">PureGym Denmark | Valby</p>
+                    <p class="xp-position">Operations Controller</p>
+                    <p class="description"><i>Following PureGym's acquisition and rebranding of Fitness World in Denmark in 2023.</i></p>
+	                <ul class="description">
+                        <li>Drove operational efficiency and revenue growth by optimizing inventory and deposit processes, reducing discrepancies by 32% and increasing deposit-related revenue by 75%.</li>
+	                    <li>Enabled data-driven decision-making at scale by consolidating and analyzing large, multi-source datasets, improving data quality and supporting 130+ locations with actionable insights on performance and cost optimization.</li>
+	                    <li>Influenced strategic initiatives and organizational capability by supporting major projects (logistics RFP, cost reduction, new operating model) and strengthening data adoption through stakeholder collaboration, training, and ongoing analytical support.</li>
+                    </ul>
+                </div>
+                <div class="xp-box padding-top-sm">
+                    <p class="xp-year">May 2019 - May 2023</p>
+                    <p class="xp-company">Fitness World | Rødovre/Valby</p>
+                    <p class="xp-position">Operations Controller</p>
+                    <p class="description"><i>Promoted internally from Club Manager.<br>Company later acquired by and rebranded as PureGym in 2023.</i></p>
+                    <ul class="description">
+                        <li>Improved payroll accuracy and cost control by identifying data discrepancies across systems, reducing salary payment errors equivalent to ~200,000 DKK/month.</li>
+	                    <li>Strengthened operational insights and decision-making by delivering recurring and ad hoc analyses and supporting 150+ locations with performance tracking, deviation analysis, and optimization opportunities.</li>
+	                    <li>Drove process and system improvements across the organization by developing asset management frameworks, contributing to system RFPs (task management, CRM), and leading communication and change management for new operational procedures.</li>
+                    </ul>
+                </div>
+                <div class="xp-box padding-top-sm">
+                    <p class="xp-year">Sep 2011 - May 2019</p>
+                    <p class="xp-company">Fitness World | Næstved/Hundige</p>
+                    <p class="xp-position">Club Manager</p>
+                    <p class="description">Managed end-to-end club operations including staff leadership, budgeting, KPI tracking, inventory planning, and data-driven optimization, while recruiting and developing teams and implementing company-wide initiatives.</p>
+                </div>
+                <div class="xp-box padding-top-sm">
+                    <p class="xp-year">Dec 2009 - Sep 2011</p>
+                    <p class="xp-company">fitness dk | Køge</p>
+                    <p class="xp-position">Club Manager</p>
+                    <p class="description">Managed end-to-end club operations including staff leadership, budgeting, KPI tracking, inventory planning, and data-driven optimization, while recruiting and developing teams and implementing company-wide initiatives.</p>
+                </div>
+				<div class="xp-box padding-top-sm">
+                    <p class="xp-year">Jun 2008 - Nov 2009</p>
+                    <p class="xp-company">fitness dk | Køge</p>
+                    <p class="xp-position">Frontdesk Manager</p>
+                    <p class="description">Oversaw daily retail operations ensuring stability, efficient inventory and procurement management, and effective team recruitment, training, and execution of central initiatives.</p>
+                </div>
+				<div class="xp-box padding-top-sm">
+                    <p class="xp-year">Jan 2001 - May 2008</p>
+                    <p class="xp-company">VP Securities A/S</p>
+                    <p class="xp-position">Systems Analyst</p>
+                    <ul class="description">
+                        <li>Led UI design for a web-based customer service platform for financial back-office functions, including requirements gathering, design specifications, and user documentation.</li>
+                        <li>Ensured high-quality delivery through testing and cross-functional coordination, aligning developers and internal users across design, development, QA, and implementation phases.</li>
+                    </ul>
+                </div>
+				<div class="xp-box padding-top-sm">
+                    <p class="xp-year">Dec 1998 - Dec 2000</p>
+                    <p class="xp-company">Nokia Mobile Phones A/S</p>
+                    <p class="xp-position">Software Design Engineer</p>
+                    <p class="description">Implemented and tested features for mobile phones in large cross-functional development projects (Nokia 3210 og 3310).</p>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav-links');
+
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
